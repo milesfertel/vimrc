@@ -19,10 +19,6 @@ Bundle 'scrooloose/nerdtree'
 Bundle 'sjl/gundo.vim'
 Bundle 'php.vim--Garvin'
 Bundle 'bronson/vim-trailing-whitespace'
-Bundle 'vim-scripts/coqIDE'
-"Bundle 'rson/vim-conque'
-"Bundle 'rbowden91/ocaml-vim'
-
 Bundle 'vim-scripts/habiLight'
 Bundle 'jcf/vim-latex'
 "Bundle 'roman/golden-ratio'
@@ -89,6 +85,9 @@ map <C-j> <C-w>j
 map <C-k> <C-w>k
 map <C-l> <C-w>l
 map <C-i> gt
+
+command WQ wq
+command Wq wq
 
 " repoen a file at the same line it was on when previously closed
 au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$")

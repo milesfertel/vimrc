@@ -21,7 +21,7 @@ hi LineNr               cterm=none ctermbg=none     ctermfg=8       gui=none    
 hi StatusLine           cterm=none ctermbg=8        ctermfg=15      gui=none        guibg=#5D5D5D   guifg=#FBFBFB
 hi StatusLineNC         cterm=none ctermbg=15       ctermfg=8       gui=none        guibg=#5D5D5D   guifg=#FBFBFB
 hi Search               cterm=none ctermbg=6        ctermfg=15      gui=none        guibg=#2EB5C1   guifg=#F7F7F7
-hi IncSearch            cterm=none ctermbg=3        ctermfg=8       gui=none        guibg=#F6DC69   guifg=#8F8F8F
+hi IncSearch            cterm=none ctermbg=3        ctermfg=8       gui=none        guibg=#e2fffd   guifg=#8F8F8F
 hi ColumnMargin         cterm=none ctermbg=0                        gui=none        guibg=#000000
 hi Error                cterm=none ctermbg=1        ctermfg=15      gui=none                        guifg=#F7F7F7
 hi ErrorMsg             cterm=none ctermbg=1        ctermfg=15      gui=none                        guifg=#F7F7F7
@@ -52,7 +52,7 @@ hi Title                cterm=none ctermbg=none     ctermfg=4       gui=none    
 " Syntax Highlighting
 " ----------------------------------------------------------------------------
 hi Keyword              cterm=none ctermbg=none ctermfg=10          gui=none        guifg=#D1FA71
-hi Comment              cterm=none ctermbg=none ctermfg=8           gui=none        guifg=#8F8F8F
+hi Comment              cterm=none ctermbg=none ctermfg=98           gui=none        guifg=#8F8F8F
 hi Delimiter            cterm=none ctermbg=none ctermfg=15          gui=none        guifg=#F7F7F7
 hi Identifier           cterm=none ctermbg=none ctermfg=12          gui=none        guifg=#96D9F1
 hi Structure            cterm=none ctermbg=none ctermfg=12          gui=none        guifg=#9DEEF2
@@ -62,8 +62,8 @@ hi PreProc              cterm=none ctermbg=none ctermfg=10          gui=none    
 hi Type                 cterm=none ctermbg=none ctermfg=12          gui=none        guifg=#96D9F1
 hi Statement            cterm=none ctermbg=none ctermfg=10          gui=none        guifg=#D1FA71
 hi Special              cterm=none ctermbg=none ctermfg=6           gui=none        guifg=#d7d7d7
-hi String               cterm=none ctermbg=none ctermfg=3           gui=none        guifg=#F6DC69
-hi Number               cterm=none ctermbg=none ctermfg=3           gui=none        guifg=#F6DC69
+hi String               cterm=none ctermbg=none ctermfg=246         gui=none        guifg=#E2FFFD
+hi Number               cterm=none ctermbg=none ctermfg=45         gui=none        guifg=#E2FFFD
 hi Underlined           cterm=none ctermbg=none ctermfg=magenta     gui=underline   guibg=#272727
 hi Symbol               cterm=none ctermbg=none ctermfg=9           gui=none        guifg=#FAB1AB
 hi Method               cterm=none ctermbg=none ctermfg=15          gui=none        guifg=#F7F7F7
