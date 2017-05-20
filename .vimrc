@@ -16,7 +16,7 @@ Plugin 'bronson/vim-trailing-whitespace'
 Plugin 'jcf/vim-latex'
 Plugin 'roman/golden-ratio'
 Plugin 'rhysd/vim-clang-format'
-
+Plugin 'saalaa/ancient-colors.vim'
 call vundle#end()            " required
 filetype plugin indent on
 " End Vundle stuff
@@ -31,12 +31,12 @@ let mapleader=","
 
 set nohidden
 set nowrap        " don't wrap lines
-set tabstop=4     " a tab is four spaces
+set tabstop=8     " a tab is eight spaces
 set backspace=indent,eol,start " allow backspacing over everything in insert mode
 set autoindent    " always set autoindenting on
 set copyindent    " copy the previous indentation on autoindenting
 set number        " always show line numbers
-set shiftwidth=4  " number of spaces to use for autoindenting
+set shiftwidth=8  " number of spaces to use for autoindenting
 set shiftround    " use multiple of shiftwidth when indenting with '<' and '>'
 set showmatch     " set show matching parenthesis
 set ignorecase    " ignore case when searching
@@ -50,7 +50,7 @@ set pastetoggle=<F2>
 set scrolloff=5
 set colorcolumn=80
 
-set expandtab
+set noexpandtab
 
 "set virtualedit=all
 
@@ -62,6 +62,7 @@ nnoremap <leader>n :NERDTreeToggle<CR>
 nnoremap <silent> <leader>/ :nohlsearch<CR>
 nnoremap <leader>w :FixWhitespace<CR>
 nnoremap <leader>g :GundoToggle<CR>
+nnoremap <leader>f :ClangFormat<CR>
 nnoremap <leader>ev :vsplit $MYVIMRC<cr>
 nnoremap <leader>sv :source $MYVIMRC<cr>
 
@@ -88,7 +89,7 @@ map <C-i> gt
 
 command! WQ wq
 command! Wq wq
-"command Q q
+command! Q q
 cabbrev W w
 
 " repoen a file at the same line it was on when previously closed
@@ -100,6 +101,16 @@ set backupdir=~/.vim/tmp
 set directory=~/.vim/tmp
 set undodir=~/.vim/tmp
 set viewdir=~/.vim/tmp
+set tags=tags;/
+
+" Before sourcing the script do:
+let g:ctags_args='-I __declspec+'
+let g:ctags_title=1        " To show tag name in title bar.
+let g:ctags_statusline=1   " To show tag name in status line.
+let generate_tags=1        " To start automatically when a supported
+"                               " file is opened.
+let g:ctags_regenerate = 1
+
 
 " use confirm instead of aborting an action
 set confirm
@@ -125,9 +136,14 @@ set undofile
 set undolevels=1000
 set history=1000
 set laststatus=2
+set clipboard=unnamedplus
+
+source ~/.vim/bundle/ctags.vim
 
 scriptencoding utf-8
 set encoding=utf-8
 set t_Co=256
-colorscheme smyck
+" colorscheme smyck
+set background=light
+colorscheme ancient
 syntax on
